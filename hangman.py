@@ -1,5 +1,6 @@
 import random
 
+
 def game():
     mistakes = 0
     word = "-" * len(chosen_word)
