@@ -1,11 +1,6 @@
 import random
 
-some_list = ['python', 'java', 'kotlin', 'javascript']
-chosen_word = random.choice(some_list)
-let_out = []
-
 def game():
-    global mistakes
     mistakes = 0
     word = "-" * len(chosen_word)
     type = input('Type "play" to play the game, "exit" to quit: ')
@@ -79,5 +74,10 @@ def game():
         exit(0)
     else:
         game()
+
+
+some_list = ['python', 'java', 'kotlin', 'javascript']
+chosen_word = random.choice(some_list)
+let_out = []
 print('H A N G M A N')
 game()
